@@ -1,0 +1,79 @@
+.hero-banner {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  color: $white;
+  padding: 0;
+  height: 500px;
+  position: relative;
+  @media (max-width: 991px) {
+    height: 380px;
+  }
+  @media (max-width: 767px) {
+    height: auto;
+  }
+  .banner-content {
+    h2 {
+      margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      padding: 70px 0;
+    }
+  }
+  &.home-hero-banner {
+    height: 640px;
+    @media (max-width: 767px) {
+      height: auto;
+    }
+    .row, .container {
+      height: 100%;
+    }
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (max-width: 767px) {
+        position: static;
+        top: auto;
+        transform: none;
+        padding: 40px 0;
+      }
+      h2 {
+        font-size: 69px;
+        line-height: 70px;
+        margin-bottom: 60px;
+        span {
+          font-family: Arial, $helvetica-light;
+        }
+        @media (max-width: 991px) {
+          font-size: 45px;
+          line-height: 47px;
+          margin-bottom: 50px;
+        }
+        @media (max-width: 767px) {
+          font-size: 35px;
+          line-height: 38px;
+          margin-bottom: 35px;
+        }
+      }
+      p {
+        max-width: 430px;
+        margin-bottom: 50px;
+        @media (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
+
+    }
+  }
+}
+
+
+section.hero-banner .container,
+section.hero-banner .theme-gt-row,
+section.hero-banner .row,
+section.hero-banner .theme-gt-column,
+section.hero-banner .gt-column-inner,
+section.hero-banner .gt-module.gt-module-text {
+  height: 100%;
+}

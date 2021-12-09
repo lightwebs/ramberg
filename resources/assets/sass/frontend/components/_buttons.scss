@@ -1,0 +1,16 @@
+.btn-theme {
+  font-family: Arial, $helvetica-bold;
+  font-weight: 700;
+  text-decoration: underline;
+  &.btn-white {
+    color: $white;
+    font-size: 26px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+  &.btn-blue {
+    color: $light-blue;
+    font-size: 20px;
+  }
+}

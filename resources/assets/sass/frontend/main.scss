@@ -1,0 +1,15 @@
+@import "autoload/bootstrap";
+@import "autoload/slick-theme";
+@import "autoload/slick";
+@import "autoload/fontawesome";
+@import "common/fonts";
+@import "common/variables";
+@import "common/mixins";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "layouts/header";
+@import "layouts/heroBanner";
+@import "layouts/footer";
+@import "layouts/layout";

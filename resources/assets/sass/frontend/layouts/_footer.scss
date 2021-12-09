@@ -1,0 +1,105 @@
+footer {
+  background: $dark-blue;
+  color: $white;
+  padding: 50px 0;
+  .gt-section {
+    padding: 0px;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  .footer-text {
+    p {
+      font-size: 15px;
+      line-height: 20px;
+      font-family: Arial, $helvetica-medium;
+      margin-bottom: 25px;
+    }
+  }
+  p{
+    font-size: 14px;
+    line-height: 30px;
+    & + p {
+      margin-top: 36px;
+    }
+    a {
+      color: $white;
+      font-family: Arial, $helvetica-regular;
+    }
+    span {
+      font-family: Arial, $helvetica-bold;
+      font-weight: 700;
+    }
+  }
+  .social {
+    p {
+      position: relative;
+      top: -2px;
+      font-family: Arial, $helvetica-medium;
+      display: inline-block;
+    }
+    ul {
+      margin: 0 0 0 10px;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      li {
+        display: inline-block;
+        background: $white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-right: 10px;
+        a {
+          color: $dark-blue;
+          font-size: 20px;
+          padding: 5px 0;
+          font-family: Arial, $helvetica-regular;
+        }
+      }
+    }
+  }
+  .footer-contact-block {
+    .gt-module-text {
+      margin-top: 36px;
+      @media (max-width: 767px) {
+        margin-top: 18px;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+      padding-left: 10%;
+    }
+  }
+  ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      line-height: 30px;
+      a {
+        color: $white;
+        font-size: 14px;
+        font-family: Arial, $helvetica-bold;
+      }
+    }
+  }
+  .footer-logo-block {
+    text-align: right;
+    .gt-module-image {
+      & + .gt-module-image{
+        margin-top: 50px;
+      }
+    }
+    @media (max-width: 991px) {
+      text-align: left;
+      margin-top: 30px;
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+      padding-left: 10%;
+    }
+  }
+}

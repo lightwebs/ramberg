@@ -1,0 +1,81 @@
+//Row Gutters
+$grid-gutter-width: 8px;
+
+// Theme ../font family variables
+
+$helvetica-regular: "Helvetica-Neue-Regular", Roboto, sans-serif;
+$helvetica-medium: "Helvetica-Neue-Medium", Roboto, sans-serif;
+$helvetica-thin: "Helvetica-Neue-Thin", Roboto, sans-serif;
+$helvetica-italic: "Helvetica-Neue-Italic", Roboto, sans-serif;
+$helvetica-bold: "Helvetica-Neue-Bold", Roboto, sans-serif;
+$helvetica-mediumitalic: "Helvetica-Neue-MediumItalic", Roboto, sans-serif;
+$helvetica-light: "Helvetica-Neue-Light", Roboto, sans-serif;
+
+.ua-windows.ua-chrome {
+  @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    $helvetica-regular: Roboto, sans-serif;
+    $helvetica-medium: Roboto, sans-serif;
+    $helvetica-thin: Roboto, sans-serif;
+    $helvetica-italic: Roboto, sans-serif;
+    $helvetica-bold: Roboto, sans-serif;
+    $helvetica-mediumitalic: Roboto, sans-serif;
+    $helvetica-light: Roboto, sans-serif;
+  }
+}
+
+
+// Theme ../Color variables
+
+$theme-color  : #414042;
+
+$white      : #ffffff;
+
+$black      : #000000;
+
+$black1      : #454444;
+
+$light-blue      : #13A8BE;
+
+$dark-blue      : #16425B;
+
+$gray      : #EAEAEA;
+
+$gray-alt      : #9A9A9A;
+
+$gray-alt1      : #707070;
+
+$gray-alt2      : #5C5C5C;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Theme ../Font size variables
+
+$size1  : 1px;
+$size2  : 2px;
+$size3  : 3px;
+$size4  : 4px;
+$size5  : 5px;
+$size10 : 10px;
+$size12 : 12px;
+$size14 : 14px;
+$size16 : 16px;
+$size18 : 18px;
+$size20 : 20px;
+$size22 : 22px;
+$size24 : 24px;
+$size26 : 26px;
+$size28 : 28px;
+$size30 : 30px;
+$size40 : 40px;
+$size50 : 50px;
+$size60 : 60px;

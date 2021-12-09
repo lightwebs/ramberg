@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+
+}
+
+
+.container, .container-fluid {
+  @include transition(.3s all ease);
+}
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1118px;
+  }
+}
+
+.row {
+  margin-left: -$grid-gutter-width;
+  margin-right: -$grid-gutter-width;
+
+  &.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.row>* {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Arial, $helvetica-regular;
+  font-size: $size16;
+  color: $black;
+  line-height: 24px;
+  background: $gray;
+
+  &.active,
+  &.overflow-hidden{
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  @include transition(0.3s ease all);
+
+  display: block;
+  color: $theme-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $light-blue !important;
+  }
+}
+
+img {
+  max-width: 100%;
+  transition:max-width 0.3s ease-out; // note that
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Arial, $helvetica-bold;
+  font-weight: 700;
+  margin-bottom: 20px;
+  @include transition(.3s all ease);
+}
+
+h5,
+h6 {
+  margin-bottom: 20px;
+  @include transition(.3s all ease);
+}
+
+h1 {
+  font-size:  $size50 + $size50;
+  line-height: 100px;
+}
+
+h2 {
+  font-size:  55px;
+  line-height: 60px;
+  @media (max-width: 991px) {
+    font-size: 45px;
+    line-height: 47px;
+  }
+  @media (max-width: 767px) {
+    font-size: 35px;
+    line-height: 38px;
+  }
+}
+
+h3 {
+  font-size:  45px;
+  line-height: 54px;
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 30px;
+  @media (max-width: 767px) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+
+p {
+  font-size: $size20;
+  line-height: 30px;
+  margin-bottom: 0;
+  @include transition(.3s all ease);
+  strong {
+    font-family: Arial, $helvetica-bold;
+    font-weight: 700;
+  }
+
+  & + p {
+    margin-top: 20px;
+  }
+  @media (max-width: 767px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+ a {
+   display: inline-block;
+ }
+}
+
+.ua-windows_nt.ua-chrome {
+  p strong {
+    font-family: Arial, $helvetica-bold;
+    font-weight: 700;
+  }
+}
+
+
+
+section {
+  padding: 115px 0;
+
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+}
+
+main {
+  @media (max-width: 991px) {
+    margin-top: 80px;
+  }
+}
+
+header.fixed + main {
+  @media (min-width: 992px) {
+  margin-top: 94px;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+
+.has-border {
+  border-top: 2px solid $dark-blue;
+}
+
+//margins
+body {
+  .mt-10 { margin-top: 10px}
+  .mt-20 { margin-top: 20px}
+  .mt-25 { margin-top: 25px}
+  .mt-30 { margin-top: 30px}
+  .mt-40 { margin-top: 40px}
+  .mt-45 { margin-top: 45px}
+  .mt-50 { margin-top: 50px}
+  .mt-58 { margin-top: 58px}
+  .mt-60 { margin-top: 60px}
+  .mt-70 { margin-top: 70px}
+  .mt-75 { margin-top: 75px}
+  .mt-80 { margin-top: 80px}
+  .mt-90 { margin-top: 90px}
+  .mt-100 { margin-top: 100px}
+  .mt-120 { margin-top: 120px}
+
+  .mb-10 { margin-bottom: 10px}
+  .mb-20 { margin-bottom: 20px}
+  .mb-25 { margin-bottom: 25px}
+  .mb-30 { margin-bottom: 30px}
+  .mb-45 { margin-bottom: 45px}
+  .mb-40 { margin-bottom: 40px}
+  .mb-50 { margin-bottom: 50px}
+  .mb-58 { margin-bottom: 58px}
+  .mb-60 { margin-bottom: 60px}
+  .mb-70 { margin-bottom: 70px}
+  .mb-75 { margin-bottom: 75px}
+  .mb-80 { margin-bottom: 80px}
+  .mb-90 { margin-bottom: 90px}
+  .mb-100 { margin-bottom: 100px}
+}
+
+.content-block {
+  margin-top: 20px;
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
+  p {
+    font-size: 18px;
+  }
+  .section-title + p {
+    font-family: Arial, $helvetica-bold;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+  img {
+    margin-top: 50px;
+  }
+
+}
+
+
+
+
+@media (min-width: 992px) {
+  .two-col-block .col-content-block {
+    padding-left: 55px;
+    margin-top: 0;
+  }
+}
+
+@media( max-width: 991px ) {
+  .m-d-none {
+    display: none;
+  }
+}
+
+@media( max-width: 767px ) {
+  .s-d-none {
+    display: none;
+  }
+}
+
+
+.section-title {
+  position: relative;
+  padding-left: 40px;
+  p {
+    font-size: 14px;
+    color: $light-blue;
+    line-height: 17px;
+    font-family: Arial, $helvetica-bold;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  h3 {
+    color: $light-blue;
+  }
+  &[data-line-position="left"] {
+    &:before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      display: inline-block;
+      background: $light-blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-left: 25px;
+  }
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.image-block {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  img {
+    opacity: 0;
+    height: 100%;
+    @media (max-width: 767px) {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+.has-shadow {
+  img {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+
+.sidebar {
+  border-left: 2px solid $black1;
+  ul {
+    padding: 0 0 0 30px;
+    list-style: none;
+    li {
+      a {
+        color: $gray-alt2;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: Arial, $helvetica-bold;
+        &.active, &:hover {
+          color: $light-blue;
+        }
+      }
+      & + li {
+        margin-top: 24px;
+      }
+    }
+    &.underline-text {
+      li {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+}
+
+
+
+//Background Colors
+
+.bg-light-blue {
+  background: $light-blue;
+}
+
+
+
+
+
+
+
+
+.form-control::placeholder {
+  color: #9A9A9A;
+  opacity: 1;
+  font-size: 15px;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #9A9A9A;
+  font-size: 15px;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #9A9A9A;
+  font-size: 15px;
+}
+
+.gt-module {
+  .gt-module-map {
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    -ms-filter: grayscale(90%);
+    -o-filter: grayscale(90%);
+    filter: grayscale(90%);
+    filter: gray;
+  }
+}
